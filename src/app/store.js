@@ -5,7 +5,7 @@ import listsReducer from "../features/lists/listsSlice";
 
 export const store = configureStore({
     reducer: {
-        //this reducer will update any update regarding lists
+        //this reducer will handle any update regarding lists
         lists: listsReducer,
     }
 });

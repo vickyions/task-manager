@@ -50,5 +50,6 @@ export const listsSlice = createSlice({
 //in reducers of slice export those to use latter
 export const { addList, removeList, changeListTitle } = listsSlice.actions;
 
+export const selectLists = (state) => state.lists;
 //export reducer to add to store reducers object which combines all of them
 export default listsSlice.reducer;
