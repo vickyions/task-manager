@@ -18,6 +18,32 @@ const initialState = [
             },
         ],
     },
+    {
+        id: 1,
+        title: "In Progress",
+        cards: [
+            {
+                id: 0,
+                title: "make Trello boiler Plate",
+                description: "Install redux vite taiwlwinds etc",
+            },
+            {
+                id: 1,
+                title: "Practice redux toolkit",
+                description: "visit  redux-toolkit.js.org",
+            },
+            {
+                id: 2,
+                title: "Luajh djshue fdhhu dkuw KJdb ,djh jhdsu JHsuh JHudh Jhuhdwoio jsiown iuisen jhd Jdund jhh",
+                description: "visit  redux-toolkit.js.org",
+            },
+            {
+                id: 3,
+                title: "Practice redux toolkit",
+                description: "visit  redux-toolkit.js.org",
+            },
+        ],
+    },
 ];
 
 export const listsSlice = createSlice({
