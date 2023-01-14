@@ -1,0 +1,66 @@
+{
+    "id": "63b6ca73120f340226b3c1ee",
+    "avatarSource": "none",
+    "avatarUrl": "https://trello-members.s3.amazonaws.com/63b6ca73120f340226b3c1ee/a5cbdfe19cb6300da7c3aee42f27353f",
+    "fullName": "edx",
+    "initials": "E",
+    "nonPublic": { "fullName": "edx", "initials": "E", "avatarHash": null },
+    "email": "edx.preveto@slmail.me",
+    "username": "edxpreveto",
+    "bio": "",
+    "prefs": {
+        "timezoneInfo": {},
+        "privacy": { "fullName": "public", "avatar": "public" },
+        "sendSummaries": true,
+        "minutesBetweenSummaries": 60,
+        "minutesBeforeDeadlineToNotify": 1440,
+        "colorBlind": false,
+        "locale": "en-US",
+        "twoFactor": { "enabled": false, "needsNewBackups": true }
+    },
+    "products": [],
+    "loginTypes": ["atlassian"],
+    "credentials": [
+        {
+            "id": "63b6ca73120f340226b3c1ef",
+            "type": "oauth2",
+            "email": "edx.preveto@slmail.me"
+        }
+    ],
+    "logins": [
+        {
+            "id": "63b6ca73120f340226b3c1ef",
+            "email": "edx.preveto@slmail.me",
+            "primary": true,
+            "types": ["atlassian"],
+            "claimable": true
+        }
+    ],
+    "sessions": [
+        {
+            "isCurrent": true,
+            "isRecent": true,
+            "id": "63b6cd7691bb9b01336464ab",
+            "data": { "email": "edx.preveto@slmail.me" },
+            "dateCreated": "2023-01-05T13:15:34.123Z",
+            "dateExpires": "2023-02-04T13:15:34.123Z",
+            "dateLastUsed": "2023-01-05T13:15:34.123Z",
+            "ipAddress": "106.201.36.95",
+            "type": "atlassian",
+            "userAgent": "Mozilla/5.0 (X11; Linux x86_64; rv:108.0) Gecko/20100101 Firefox/108.0"
+        },
+        {
+            "isCurrent": false,
+            "isRecent": true,
+            "id": "63b6ca73120f340226b3c21e",
+            "data": { "email": "edx.preveto@slmail.me" },
+            "dateCreated": "2023-01-05T13:02:43.611Z",
+            "dateExpires": "2023-02-04T13:15:27.285Z",
+            "dateLastUsed": "2023-01-05T13:15:27.285Z",
+            "ipAddress": "106.201.36.95",
+            "type": "atlassian",
+            "userAgent": "Mozilla/5.0 (X11; Linux x86_64; rv:108.0) Gecko/20100101 Firefox/108.0"
+        }
+    ],
+    "tokens": []
+}
