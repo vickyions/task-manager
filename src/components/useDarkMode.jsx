@@ -3,7 +3,7 @@ import React, {useState, useEffect} from "react";
 export default function useDarkMode() {
     //bool
     const [isDark, setIsDark] = useState(() => {
-        return JSON.parse(localStorage.isDark);
+        return  localStorage.getItem("isDark") ? JSON.parse(localStorage.isDark) : false;
     });
 
     useEffect(() => {
