@@ -9,7 +9,7 @@ export default function Board() {
     const lists = useSelector(selectLists);
 
     return (
-        <div className="container flex gap-2 m-3 mx-auto w-full">
+        <div className="flex gap-3 p-5 mx-auto w-full overflow-scroll">
             {lists &&
                 lists.map((list) => {
                     return <List key={list.id} list={list} />;
