@@ -75,6 +75,8 @@ export const listsSlice = createSlice({
         addCard: (state, action) => {
             const {listId, card} = action.payload; //{listId, card: {title, description}}
             card.id = uuidv4();
+            card.description = card.description ? card.description : "";
+            console.log(card);
             state.map(list => {
                 if (list.id === listId) {
                     list.cards.push(card);
