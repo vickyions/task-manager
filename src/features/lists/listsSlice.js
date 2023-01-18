@@ -57,24 +57,44 @@ export const listsSlice = createSlice({
                 title: action.payload.title,
                 cards: [],
             };
-            state.push(newList);
+            //state.push(newList);
+            return [...state, newList];
         },
         removeList: (state, action) => {
             return state.filter((list) => list.id !== action.payload.id);
         },
         changeListTitle: (state, action) => {
-            return state.forEach((list) => {
+            return state.map((list) => {
                 if (list.id === action.payload.id) {
                     return { ...list, title: action.payload.title };
                 } else return list;
             });
         },
+
+        //reducers for cards
+        addCard: (state, action) => {
+            const {listId, card} = action.payload; //{listId, card: {title, description}}
+            card.id = uuidv4();
+            state.map(list => {
+                if (list.id === listId) {
+                    list.cards.push(card);
+                } else return list;
+            })
+        },
+        removeCard: (state, action) => {
+            const {listId, cardId} = action.payload; //{listId, card: {title, description}}
+            return state.map(list => {
+                if (list.id === listId) {
+                    return list.cards.filter(card => card.id !== cardId);
+                } else return list;
+            })
+        }
     },
 });
 
 //Action creators are generatod for each reducer function defined
 //in reducers of slice export those to use latter
-export const { addList, removeList, changeListTitle } = listsSlice.actions;
+export const { addList, removeList, changeListTitle, addCard, removeCard } = listsSlice.actions;
 
 export const selectLists = (state) => state.lists;
 //export reducer to add to store reducers object which combines all of them

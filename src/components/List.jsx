@@ -4,10 +4,10 @@ import Card from "./Card";
 
 import { Plus } from "phosphor-react";
 import {useDispatch} from "react-redux";
-import {addList} from "../features/lists/listsSlice";
+import {addCard} from "../features/lists/listsSlice";
 
 export default function List(props) {
-    const { title, cards } = props.list;
+    const { id, title, cards } = props.list;
     const dispatch = useDispatch();
 
     return (
@@ -18,10 +18,14 @@ export default function List(props) {
                 </h4>
                 <button className="p-1 rounded-md bg-gray-200 dark:text-gray-900" onClick={e => {
                     //TODO: replace this after creating reducers to add cards It was just to check if redux is working
-                    const List = {
-                        title: "temperoroy list",
-                    }
-                    dispatch(addList(List))
+                    const payload = {
+                        listId: id,
+                        card: {
+                            title: "New card",
+                            description: "Card description"
+                        }
+                    };
+                    dispatch(addCard(payload));
                 }}>
                     <Plus />
                 </button>
