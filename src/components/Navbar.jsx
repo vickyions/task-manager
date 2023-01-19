@@ -33,7 +33,7 @@ export default function Navbar() {
                 </button>
             </div>
 
-            <label className="relative inline-flex items-center cursor-pointer">
+            <label className="min-w-fit relative inline-flex items-center cursor-pointer">
                 <input
                     type="checkbox"
                     checked={isDark}
