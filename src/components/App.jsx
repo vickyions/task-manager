@@ -3,6 +3,7 @@ import './App.css';
 
 import Board from "./Board";
 import Navbar from "./Navbar";
+import CardPopup from "./CardPopup";
 
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
     <div>
       <Navbar />
         <Board />
+      <CardPopup />
     </div>
   )
 }
